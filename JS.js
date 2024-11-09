@@ -22,3 +22,28 @@ function squareDigits(num) {
 // Примеры использования:
 console.log(squareDigits(9119)); // Вывод: 811181
 console.log(squareDigits(765));   // Вывод: 493625
+
+// Usually when you buy something, you're asked whether your credit card number, phone number or answer to your most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it.
+
+// Your task is to write a function maskify, which changes all but the last four characters into '#'.
+
+function maskify(cc) {
+    // Check the length of the string
+    if (cc.length <= 4) {
+        return cc; // Return the string as is if it's 4 characters or less
+    }
+    
+    // Create the masked part and concatenate with the last four characters
+    const maskedPart = '#'.repeat(cc.length - 4); // Create a string of '#'s
+    const lastFour = cc.slice(-4); // Get the last four characters
+    
+    return maskedPart + lastFour; // Combine and return
+}
+
+// Examples
+console.log(maskify("4556364607935616")); // Output: "############5616"
+console.log(maskify("64607935616"));      // Output: "#######5616"
+console.log(maskify("1"));                 // Output: "1"
+console.log(maskify(""));                  // Output: ""
+console.log(maskify("Skippy"));            // Output: "##ippy"
+console.log(maskify("Nananananananananananananananana Batman!")); // Output: "####################################man!"
