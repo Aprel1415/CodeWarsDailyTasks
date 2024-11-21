@@ -47,3 +47,167 @@ console.log(maskify("1"));                 // Output: "1"
 console.log(maskify(""));                  // Output: ""
 console.log(maskify("Skippy"));            // Output: "##ippy"
 console.log(maskify("Nananananananananananananananana Batman!")); // Output: "####################################man!"
+
+
+
+
+
+// starting a new kata training for js https://www.codewars.com/collections/training-js-series-for-javascript-beginner-myjinxin2015
+// Task 1
+// Please refer to two example above and write your first JS function.
+
+// mission 1:
+
+// use keyword function to define your function, function name should be helloWorld(don't forget the () and {})
+
+// mission 2:
+
+// use keyword var (or let or const) to define a variable str, value of str should be a string: "Hello World!"(don't forget the =).
+
+// mission 3:
+
+// type the console.log() in the next line (don't forget to put the str in the parentheses).
+
+// When you have finished the work, click "Run Tests" to see if your code is working properly.
+
+// In the end, click "Submit" to submit your code pass this kata.
+
+function helloWorld() {
+    var str = "Hello World!"; 
+    console.log(str); 
+  }
+  helloWorld(); 
+
+//   Task 2
+//   I've written five function equal1,equal2,equal3,equal4,equal5, defines six global variables v1 v2 v3 v4 v5 v6, every function has two local variables a,b, please set the appropriate value for the two variables(select from v1--v6), making these function return value equal to 100. the function equal1 is completed, please refer to this example to complete the following functions.
+  
+//   When you have finished the work, click "Run Tests" to see if your code is working properly.
+  
+//   In the end, click "Submit" to submit your code pass this kata.
+
+let v1 = 50,
+    v2 = 100,
+    v3 = 150,
+    v4 = 200,
+    v5 = 2,
+    v6 = 250;
+
+function equal1() {
+  let a = v1,   
+      b = v1;   
+  return a + b; 
+}
+
+function equal2() {
+  let a = v4, 
+      b = v2;  
+  return a - b; 
+}
+
+function equal3() {
+  let a = v1,  
+      b = v5; 
+  return a * b; 
+}
+
+function equal4() {
+  let a = v4, 
+      b = v5; 
+  return a / b; 
+}
+
+function equal5() {
+  let a = v6, 
+      b = v3; 
+  return a % b; 
+}
+
+// Task 3
+// misson 1: I've create three function, and defined some global variables, please select some variables that can make up the name of the function, and return them(Please note the uppercase and lowercase letters are different).
+
+// When you have finished the work, click "Run Tests" to see if your code is working properly.
+
+// misson 2: After misson 1 finished. you should click "Attempt" to see my three questions, and write the answer in function answer1, answer2,answer3
+
+// If everything is right, click "Submit" again to submit your code pass this kata.
+
+var a1="A",a2="a",b1="B",b2="b",c1="C",c2="c",d1="D",d2="d",e1="E",e2="e",n1="N",n2="n"
+function Dad(){
+  //select some variable to combine "Dad"
+  return d1+a2+d2;
+}
+function Bee(){
+  //select some variable to combine "Bee"
+  return b1+e2+e2;
+}
+function banana(){
+  //select some variable to combine "banana"
+  return b2 + a2 + n2 + a2 + n2 + a2;
+}
+
+//answer some questions if you finished works above
+function answer1(){
+  //the answer should be "yes" or "no"
+  return "no";
+}
+function answer2(){
+  //the answer should be "yes" or "no"
+  return "no";
+}
+function answer3(){
+  //the answer should be "yes" or "no"
+  return "yes";
+}
+
+// Task 4
+// I've written five functions. Each function receives a parameter arr which is an array. Complete the functions using arr inside the function bodies.
+
+//     1. getLength(arr)    should return length of arr
+//     2. getFirst(arr)     should return the first element of arr
+//     3. getLast(arr)      should return the last element of arr
+//     4. pushElement(arr)  should push an element to arr, and then return arr
+//     5. popElement(arr)   should pop an element from arr, and then return arr
+// When you have finished the work, click "Run Tests" to see if your code is working properly.
+
+// In the end, click "Submit" to submit your code pass this kata.
+
+function getLength(arr){
+    //return the length of arr
+    return arr.length
+  }
+  function getFirst(arr){
+    //return the first element of arr
+    return arr[0]
+  }
+  function getLast(arr){
+    //return the last element of arr
+    return arr[arr.length - 1]
+  }
+  function pushElement(arr){
+    var el=1;
+    //push el to arr
+    
+    return arr.push(4), arr
+  }
+  function popElement(arr){
+    //pop an element from arr
+    
+    return arr.pop(), arr
+  }
+
+// Task5
+// Give you a function animal, accept 1 parameter:obj like this:
+
+// {name:"dog",legs:4,color:"white"}
+// and return a string like this:
+
+// "This white dog has 4 legs."
+// When you have finished the work, click "Run Tests" to see if your code is working properly.
+
+// In the end, click "Submit" to submit your code pass this kata.
+
+function animal(obj) {
+    // Construct the string using the properties of the input object
+    return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+  }
+  
